@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Exercício 05</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Tag HTML Obrigatória: <form> */
+        /* Propriedade CSS Obrigatória: box-shadow */
+        .contact-form {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 550px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Propriedade obrigatória */
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../exercicio_01/index.html">Introdução</a>
+            <a href="../exercicio_02/index.html">Perfil</a>
+            <a href="../exercicio_03/index.html">Portfólio</a>
+            <a href="../exercicio_04/index.html">Blog</a>
+            <a href="index.html">Contato</a>
+            <a href="../exercicio_06/index.html">FAQ</a>
+            <a href="../exercicio_07/index.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Entre em Contato</h2>
+                <p>Preencha o formulário abaixo para nos enviar uma mensagem.</p>
+            </div>
+
+            <!-- Tag HTML Obrigatória: <form> -->
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome aqui..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Data de Entrega: 10/04/2026</p>
+    </footer>
+</body>
+</html>

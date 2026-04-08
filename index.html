@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Web Design - 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .main-home {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .main-home h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .main-home p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .exercise-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: left;
+            border-top: 5px solid #3498db;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .exercise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .exercise-card h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .exercise-card .requirements {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .exercise-card .requirements span {
+            display: block;
+            margin-bottom: 5px;
+            color: #34495e;
+            font-weight: 600;
+        }
+
+        .exercise-card .requirements code {
+            color: #e74c3c;
+            background-color: #fceae9;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: normal;
+        }
+
+        .project-info {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+            text-align: left;
+        }
+
+        .project-info h2 {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #3e5871;
+            padding-bottom: 0.5rem;
+        }
+
+        .project-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-info li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-info li::before {
+            content: '✓';
+            color: #2ecc71;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="exercicio_01/index.html">Exercício 01</a>
+            <a href="exercicio_02/index.html">Exercício 02</a>
+            <a href="exercicio_03/index.html">Exercício 03</a>
+            <a href="exercicio_04/index.html">Exercício 04</a>
+            <a href="exercicio_05/index.html">Exercício 05</a>
+            <a href="exercicio_06/index.html">Exercício 06</a>
+            <a href="exercicio_07/index.html">Exercício 07</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="main-home">
+            <h1>Trabalho de Desenvolvimento Web</h1>
+            <p>Este repositório contém a resolução dos 7 exercícios propostos, cada um focado em tags HTML e propriedades CSS específicas, demonstrando domínio técnico e cuidado visual.</p>
+
+            <div class="exercise-grid">
+                <!-- Exercício 1 -->
+                <a href="exercicio_01/index.html" class="exercise-card">
+                    <div>
+                        <h3>01 - Introdução</h3>
+                        <p>Página de boas-vindas com título de destaque e imagem de fundo.</p>
+                    </div>
+                    <div class="requirements">
+                        <span>Tag: <code>&lt;h1&gt;</code></span>
+                        <span>Propriedade: <code>background-image</code></span>
+                    </div>
+                </a>
+
+                <!-- Exercício 2 -->
+                <a href="exercicio_02/index.html" class="exercise-card">
+                    <div>
+                        <h3>02 - Perfil</h3>
+                        <p>Cartão de perfil pessoal com foto arredondada e redes sociais.</p>
+                    </div>
+                    <div class="requirements">
+                        <span>Tag: <code>&lt;img&gt;</code></span>
+                        <span>Propriedade: <code>border-radius</code></span>
+                    </div>
+                </a>
+
+                <!-- Exercício 3 -->
+                <a href="exercicio_03/index.html" class="exercise-card">
+                    <div>
+                        <h3>03 - Portfólio</h3>
+                        <p>Galeria de projetos utilizando sistema de grade moderno.</p>
+                    </div>
+                    <div class="requirements">
+                        <span>Tag: <code>&lt;div&gt;</code></span>
+                        <span>Propriedade: <code>grid</code></span>
+                    </div>
+                </a>
+
+                <!-- Exercício 4 -->
+                <a href="exercicio_04/index.html" class="exercise-card">
+                    <div>
+                        <h3>04 - Blog</h3>
+                        <p>Lista de postagens estilizada com foco em conteúdo textual.</p>
+                    </div>
+                    <div class="requirements">
+                        <span>Tag: <code>&lt;ul&gt;</code></span>
+                        <span>Propriedade: <code>list-style</code></span>
+                    </div>
+                </a>
+
+                <!-- Exercício 5 -->
+                <a href="exercicio_05/index.html" class="exercise-card">
+                    <div>
+                        <h3>05 - Contato</h3>
+                        <p>Formulário interativo com efeitos de profundidade.</p>
+                    </div>
+                    <div class="requirements">
+                        <span>Tag: <code>&lt;form&gt;</code></span>
+                        <span>Propriedade: <code>box-shadow</code></span>
+                    </div>
+                </a>
+
+                <!-- Exercício 6 -->
+                <a href="exercicio_06/index.html" class="exercise-card">
+                    <div>
+                        <h3>06 - FAQ</h3>
+                        <p>Perguntas frequentes com animações de transição suave.</p>
+                    </div>
+                    <div class="requirements">
+                        <span>Tag: <code>&lt;details&gt;</code></span>
+                        <span>Propriedade: <code>transition</code></span>
+                    </div>
+                </a>
+
+                <!-- Exercício 7 -->
+                <a href="exercicio_07/index.html" class="exercise-card">
+                    <div>
+                        <h3>07 - Login</h3>
+                        <p>Interface de autenticação com foco em campos de entrada.</p>
+                    </div>
+                    <div class="requirements">
+                        <span>Tag: <code>&lt;input&gt;</code></span>
+                        <span>Propriedade: <code>border</code></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="project-info">
+            <h2>Informações da Entrega</h2>
+            <ul>
+                <li><strong>Data de Entrega:</strong> 10 de Abril de 2026</li>
+                <li><strong>Formato:</strong> Link para repositório GitHub</li>
+                <li><strong>Organização:</strong> Pastas individuais por exercício</li>
+                <li><strong>Critérios:</strong> Tags e propriedades CSS obrigatórias respeitadas</li>
+                <li><strong>Apresentação:</strong> Explicação oral dos conceitos utilizados</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Trabalho Acadêmico</p>
+    </footer>
+</body>
+</html>

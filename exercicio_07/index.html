@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Exercício 07</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+        }
+
+        .login-card {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-card h2 {
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+
+        .login-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .login-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        /* Tag HTML Obrigatória: <input> */
+        /* Propriedade CSS Obrigatória: border */
+        .login-input {
+            width: 100%;
+            padding: 12px 15px;
+            /* Propriedade obrigatória */
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .login-input:focus {
+            /* Alterando a borda no foco */
+            border: 2px solid #3498db;
+            background-color: #f0f7fd;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .login-btn:hover {
+            background-color: #1a252f;
+        }
+
+        .login-footer {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        .login-footer a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../exercicio_01/index.html">Introdução</a>
+            <a href="../exercicio_02/index.html">Perfil</a>
+            <a href="../exercicio_03/index.html">Portfólio</a>
+            <a href="../exercicio_04/index.html">Blog</a>
+            <a href="../exercicio_05/index.html">Contato</a>
+            <a href="../exercicio_06/index.html">FAQ</a>
+            <a href="index.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="login-container">
+            <div class="login-card">
+                <h2>Acesso Restrito</h2>
+                
+                <form action="#" method="post">
+                    <div class="login-group">
+                        <label for="username">Usuário</label>
+                        <!-- Tag HTML Obrigatória: <input> -->
+                        <input type="text" id="username" class="login-input" placeholder="Seu nome de usuário" required>
+                    </div>
+
+                    <div class="login-group">
+                        <label for="password">Senha</label>
+                        <!-- Tag HTML Obrigatória: <input> -->
+                        <input type="password" id="password" class="login-input" placeholder="Sua senha secreta" required>
+                    </div>
+
+                    <button type="submit" class="login-btn">Entrar no Sistema</button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Data de Entrega: 10/04/2026</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Exercício 03</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .portfolio-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .portfolio-header h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        /* Tag HTML Obrigatória: <div> (usada na classe grid-container) */
+        /* Propriedade CSS Obrigatória: grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .grid-item-info {
+            padding: 1.5rem;
+        }
+
+        .grid-item-info h3 {
+            margin-bottom: 0.5rem;
+            color: #34495e;
+        }
+
+        .grid-item-info p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../exercicio_01/index.html">Introdução</a>
+            <a href="../exercicio_02/index.html">Perfil</a>
+            <a href="index.html">Portfólio</a>
+            <a href="../exercicio_04/index.html">Blog</a>
+            <a href="../exercicio_05/index.html">Contato</a>
+            <a href="../exercicio_06/index.html">FAQ</a>
+            <a href="../exercicio_07/index.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="portfolio-header">
+            <h2>Meus Projetos Recentes</h2>
+            <p>Uma seleção de exercícios desenvolvidos durante o curso de Web Design.</p>
+        </div>
+
+        <div class="grid-container">
+            <!-- Projeto 1 -->
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Projeto 1">
+                <div class="grid-item-info">
+                    <h3>Landing Page Moderna</h3>
+                    <p>Desenvolvimento de uma página de introdução com imagens de fundo em alta resolução.</p>
+                    <a href="../exercicio_01/index.html" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Projeto 2">
+                <div class="grid-item-info">
+                    <h3>Página de Perfil</h3>
+                    <p>Design de cartão de perfil pessoal com bordas arredondadas e links sociais.</p>
+                    <a href="../exercicio_02/index.html" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&q=80" alt="Projeto 3">
+                <div class="grid-item-info">
+                    <h3>Blog de Notícias</h3>
+                    <p>Estruturação de uma lista de postagens com estilização personalizada.</p>
+                    <a href="../exercicio_04/index.html" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+
+            <!-- Projeto 4 -->
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=600&q=80" alt="Projeto 4">
+                <div class="grid-item-info">
+                    <h3>Formulário de Contato</h3>
+                    <p>Criação de formulários interativos com efeitos de sombra e validação.</p>
+                    <a href="../exercicio_05/index.html" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Data de Entrega: 10/04/2026</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Exercício 06</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .faq-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-header h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Tag HTML Obrigatória: <details> */
+        /* Propriedade CSS Obrigatória: transition */
+        details {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+            /* Propriedade obrigatória */
+            transition: all 0.4s ease-in-out;
+            border: 1px solid #eee;
+        }
+
+        details:hover {
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        summary {
+            padding: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        summary:hover {
+            background-color: #f8f9fa;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #3498db;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            content: '-';
+            transform: rotate(180deg);
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #eee;
+            background-color: #f0f7fd;
+        }
+
+        .faq-content {
+            padding: 1.5rem;
+            color: #7f8c8d;
+            line-height: 1.8;
+            background-color: white;
+            animation: slideDown 0.4s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../exercicio_01/index.html">Introdução</a>
+            <a href="../exercicio_02/index.html">Perfil</a>
+            <a href="../exercicio_03/index.html">Portfólio</a>
+            <a href="../exercicio_04/index.html">Blog</a>
+            <a href="../exercicio_05/index.html">Contato</a>
+            <a href="index.html">FAQ</a>
+            <a href="../exercicio_07/index.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="faq-header">
+            <h2>Perguntas Frequentes</h2>
+            <p>Tire suas dúvidas sobre o desenvolvimento web e este projeto.</p>
+        </div>
+
+        <div class="faq-list">
+            <!-- Tag HTML Obrigatória: <details> -->
+            <details>
+                <summary>O que é o HTML5?</summary>
+                <div class="faq-content">
+                    <p>O HTML5 é a versão mais recente da Linguagem de Marcação de Hipertexto (HTML), que é a linguagem padrão usada para criar e estruturar o conteúdo da web. Ele introduziu novas tags semânticas, suporte nativo para áudio e vídeo, e APIs poderosas para aplicações web modernas.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Para que serve o CSS3?</summary>
+                <div class="faq-content">
+                    <p>O CSS3 (Cascading Style Sheets) é a linguagem utilizada para definir a apresentação visual de um documento HTML. Com ele, podemos controlar cores, fontes, layouts (como Grid e Flexbox), animações e garantir que o site seja responsivo em diferentes dispositivos.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Como funciona a propriedade transition?</summary>
+                <div class="faq-content">
+                    <p>A propriedade CSS <code>transition</code> permite que você altere os valores das propriedades de forma suave ao longo de um determinado tempo, em vez de ocorrer uma mudança instantânea. É essencial para criar interações mais agradáveis e fluidas para o usuário.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>O que são tags semânticas?</summary>
+                <div class="faq-content">
+                    <p>Tags semânticas são aquelas que descrevem claramente seu significado tanto para o navegador quanto para o desenvolvedor. Exemplos incluem <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> e <code>&lt;details&gt;</code>. Elas melhoram a acessibilidade e o SEO do site.</p>
+                </div>
+            </details>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Data de Entrega: 10/04/2026</p>
+    </footer>
+</body>
+</html>

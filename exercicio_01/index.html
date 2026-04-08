@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução - Exercício 01</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            /* Propriedade CSS Obrigatória: background-image */
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 2rem;
+            background: rgba(0,0,0,0.4);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Introdução</a>
+            <a href="../exercicio_02/index.html">Perfil</a>
+            <a href="../exercicio_03/index.html">Portfólio</a>
+            <a href="../exercicio_04/index.html">Blog</a>
+            <a href="../exercicio_05/index.html">Contato</a>
+            <a href="../exercicio_06/index.html">FAQ</a>
+            <a href="../exercicio_07/index.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <!-- Tag HTML Obrigatória: <h1> -->
+        <h1>Bem-vindo ao Projeto de Web Design</h1>
+        <p>Este trabalho apresenta os fundamentos de HTML e CSS aplicados em diferentes contextos. Cada página foi desenvolvida seguindo critérios rigorosos de estrutura e estilização, garantindo uma experiência de usuário moderna e funcional.</p>
+        <a href="../exercicio_02/index.html" class="btn">Conhecer o Perfil</a>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Data de Entrega: 10/04/2026</p>
+    </footer>
+</body>
+</html>

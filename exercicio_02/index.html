@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Pessoal - Exercício 02</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .profile-card {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            /* Propriedade CSS Obrigatória: border-radius */
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-desc {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 600;
+            padding: 8px 15px;
+            border: 2px solid #3498db;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../exercicio_01/index.html">Introdução</a>
+            <a href="index.html">Perfil</a>
+            <a href="../exercicio_03/index.html">Portfólio</a>
+            <a href="../exercicio_04/index.html">Blog</a>
+            <a href="../exercicio_05/index.html">Contato</a>
+            <a href="../exercicio_06/index.html">FAQ</a>
+            <a href="../exercicio_07/index.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="profile-card">
+            <!-- Tag HTML Obrigatória: <img> -->
+            <img src="C:\Users\Richard\Downloads\0e0a2735-90ab-4d9f-a831-51dfc5b79f87.jpg" alt="Foto de Perfil" class="profile-img">
+            <h2 class="profile-name">Richard Marques</h2>
+            <p class="profile-desc">Estudante de Desenvolvimento Web apaixonado por criar interfaces modernas e funcionais. Gosto de aprender novas tecnologias e explorar o mundo do CSS.</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/marquesrichard875-ops?tab=repositories" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">Linkedin</a>
+                <a href="https://x.com/_Ricksfc" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Data de Entrega: 10/04/2026</p>
+    </footer>
+</body>
+</html>

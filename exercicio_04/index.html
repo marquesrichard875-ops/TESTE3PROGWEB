@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Exercício 04</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .blog-header h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        /* Tag HTML Obrigatória: <ul> */
+        /* Propriedade CSS Obrigatória: list-style */
+        .blog-list {
+            list-style: none; /* Removendo o marcador padrão */
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-item {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid #3498db;
+            transition: transform 0.2s;
+        }
+
+        .blog-item:hover {
+            transform: scale(1.02);
+        }
+
+        .blog-item h3 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-meta {
+            font-size: 0.85rem;
+            color: #95a5a6;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .blog-summary {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../exercicio_01/index.html">Introdução</a>
+            <a href="../exercicio_02/index.html">Perfil</a>
+            <a href="../exercicio_03/index.html">Portfólio</a>
+            <a href="index.html">Blog</a>
+            <a href="../exercicio_05/index.html">Contato</a>
+            <a href="../exercicio_06/index.html">FAQ</a>
+            <a href="../exercicio_07/index.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="blog-header">
+            <h2>Últimas Postagens</h2>
+            <p>Fique por dentro das novidades do desenvolvimento front-end.</p>
+        </div>
+
+        <!-- Tag HTML Obrigatória: <ul> -->
+        <ul class="blog-list">
+            <li class="blog-item">
+                <h3>O Poder do CSS Grid</h3>
+                <p class="blog-meta">Publicado em: 25 de Março de 2026</p>
+                <p class="blog-summary">Descubra como o CSS Grid revolucionou a forma como criamos layouts complexos na web de maneira simples e eficiente.</p>
+                <a href="#" class="read-more">Leia mais em &rarr; </a><a href="https://yurideveloper.com.br/blog/index.php/2025/07/22/o-poder-do-css-grid-criando-layouts-flexiveis-e-responsivos/">O Poder do CSS Grid</a>
+            </li>
+
+            <li class="blog-item">
+                <h3>Acessibilidade Web: Por que Importa?</h3>
+                <p class="blog-meta">Publicado em: 18 de Março de 2026</p>
+                <p class="blog-summary">Tornar a web acessível para todos não é apenas uma boa prática, é um direito. Aprenda os fundamentos da acessibilidade.</p>
+                <a href="#" class="read-more">Leia mais em &rarr; </a><a href="https://studiovisual.com.br/blog/acessibilidade-web">Acessibilidade Web</a>
+            </li>
+
+            <li class="blog-item">
+                <h3>Dicas para Formulários Modernos</h3>
+                <p class="blog-meta">Publicado em: 10 de Março de 2026</p>
+                <p class="blog-summary">Formulários são a principal forma de interação do usuário. Veja como torná-los mais amigáveis e bonitos com CSS.</p>
+                <a href="#" class="read-more">Leia mais em &rarr; </a><a href="https://www.devmedia.com.br/customizando-formularios-com-css/37212">Dicas para Formulários Modernos</a>
+                <style>
+a {
+  color: #3498db;
+}
+</style>
+
+        </ul>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web &copy; 2026 - Data de Entrega: 10/04/2026</p>
+    </footer>
+</body>
+</html>
